@@ -1,0 +1,9 @@
+# Utiliser l'image officielle de PHPMyAdmin
+FROM phpmyadmin/phpmyadmin
+
+# Définir les variables d'environnement pour la configuration de PHPMyAdmin
+ENV PMA_HOST=backend
+ENV PMA_PORT=3306
+
+# Exposer le port 80 pour accéder à PHPMyAdmin depuis l'extérieur du conteneur
+EXPOSE 8001
